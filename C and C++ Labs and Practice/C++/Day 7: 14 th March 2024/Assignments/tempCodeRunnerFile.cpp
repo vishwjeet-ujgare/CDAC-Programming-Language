@@ -1,5 +1,1 @@
-void operator++()
-    {
-         l++;
-         w++;
-    }
+ string name;
