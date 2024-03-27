@@ -160,6 +160,6 @@ int main()
 
     if(!isBookFound)
     {
-        cout << "Required Book was not found in stock." << endl;
+        cout << "Required Book was not found in stock." << endl; 
     }
 }
