@@ -1,2 +1,0 @@
-
-        int ltempNum=num;
