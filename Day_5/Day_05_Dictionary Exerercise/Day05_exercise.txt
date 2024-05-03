@@ -1,0 +1,202 @@
+Assignment/Exercises 
+Topics covered : Modules,Functions,Looping,Conditional constructs,Input,Output,Collections :
+---------------------------------------------------------------------------------------------------------
+
+
+2) Create a program named "my_dict_store" which support following operations on 
+dictionary named "capitals" which would have keys as their country and values as their capitals
+respectively from the user
+for ex: "India" : "New Delhi" ,"USA" : "Washington DC","Nepal": "Kathmandu","Ukraine" : "Kyiv"
+is provided by the user 
+
+Operations supported by our program are :
+    1: Display number of elements in the capitals collection
+    2: Add an element to the capitals collection like --> Afghanistan: Kabul
+    3: Add multiple elements to the capitals collection like -->  Albania:Tirana,Algeria:Algiers,Andorra:Andorra la Vella
+    4: Remove an element from the collection 	
+    5: Take a key from the user and show value if it is present in the dictionary
+    6: Take a key from the user update it if it is present in the dictionary or add the key to the dictionary 	
+
+
+Keep asking the user for the operation in this store untill he chooses to exit from the program
+
+# Sample code template for my_dict_store
+def dict_display_capitals(capitals): 
+       print("Unimplemented , Write your code here") 
+     
+def dict_add_element(capitals):
+    print("Unimplemented , Write your code here") 
+        
+def dict_add_elements(capitals):
+    print("Unimplemented , Write your code here") 
+        
+def dict_remove_element(capitals):
+    print("Unimplemented , Write your code here") 
+
+def dict_show_value_for_a_key(capitals):
+    print("Unimplemented , Write your code here") 
+
+def dict_update_or_add_a_key(capitals):
+    print("Unimplemented , Write your code here") 
+
+def my_dict_store():
+    print("\n Welcome to Our Dict Store !!! ")
+	
+    capitals= {}
+
+
+
+
+    """
+        # Write your code here to create the dictionary from the user and reference it with capitals
+    """
+    print("Unimplemented , Write your code here to create the dictionary from the user and reference it with capitals") 
+    print(capitals)
+    
+    while(True):
+        print("\n*************** Menu **********************")
+        print("Operations supported by our program are :")
+        print("    1: Display all elements in the capitals collection")
+        print('    2: Add an element to the capitals collection like --> Afghanistan: Kabul')
+        print('    3: Add multiple elements to the capitals collection like -->  Albania:Tirana,Algeria:Algiers,Andorra:Andorra la Vella')
+        print("    4: Remove an element from the collection 	")
+        print("    5: Exit the Program ")
+        choice = int(input("Please enter your choice "))
+        
+        if choice   ==1:
+            dict_display_capitals(capitals) 
+        elif choice ==2:
+            dict_add_element(capitals)
+        elif choice ==3:
+            dict_add_elements(capitals)
+        elif choice ==4:
+            dict_remove_element(capitals) 
+        elif choice ==5:
+            dict_show_value_for_a_key(capitals)
+        elif choice ==6:
+            dict_update_or_add_a_key(capitals)
+        elif choice ==7:
+            break
+        else:
+            print("Invalid Input , Please Try Again !!!!  ")
+
+my_dict_store()
+
+
+
+
+
+"""
+# Exercise 2.1 : Create a dictionary like this by taking values from the user:
+here the idea is to support a generic dictionary where the values could be of any datatype
+and the keys are strings
+
+{
+'employee_id' : 1,
+'employee_name' : 'Sarwesh'
+'account_number' : 829389283982839,
+'salary' : 1000.99999,
+'address' : {'home_address' : 'Pune' , 'work_address' : 'mumbai'} ,
+'awards': ['employeeOfTheYear','StarOfTheMonth']
+'subjects_enrolled' : ('Physics','Chemistry')
+}
+"""
+
+
+
+
+
+3)  Create a program named "my_set_store" which support following operations on two sets
+    provided by user 
+
+for ex: 
+	A = {1,2,3,4,5}
+	B = {18,19,20,21}
+is provided by the user
+
+Operations supported by our program are :
+	1: Union
+	2: Intersection 
+	3: A-B
+	4: B-A
+	5: Take a element from user and Display if that element is a member of set B 
+	6: Display number of elements in the set A
+    7: Display number of elements in the set B
+	8: Add an element taken from the user to the set A
+	9: Add multiple elements taken from the user to the set A
+	10: Remove an element taken from the user from set A
+
+# Sample code template for my set store
+def set_union(setA,setB) :
+	print("Unimplemented , Write your code here") 
+
+def set_intersection(setA,setB) :
+	print("Unimplemented , Write your code here") 
+
+def set_minus(setA,setB) :
+	print("Unimplemented , Write your code here") 
+
+def is_member_of_set(setB) :
+	print("Unimplemented , Write your code here") 
+
+def set_display(setA):
+	print("Unimplemented , Write your code here") 
+		
+def set_add_element(setA):
+	print("Unimplemented , Write your code here") 
+
+def set_add_elements(setA):
+	print("Unimplemented , Write your code here")
+
+def set_remove_element(setA):
+	print("Unimplemented , Write your code here") 
+
+def my_set_store():
+	print("\n Welcome to Our Set Store !!! ")
+
+	setA= set(input("Please enter comma seperated elements for the set A").split(","))
+	setB= set(input("Please enter comma seperated elements for the set B").split(","))
+ 
+	while(True):
+		print("\n*************** Menu **********************")
+		print("Operations supported by our program are :")
+		print("	1: Union")
+		print("	2: Intersection ")
+		print("	3: A-B")
+		print("	4: B-A")
+		print("	5: Take a element from user and Display if that element is a member of set B ")
+		print("	6: Display number of elements in the set A")
+		print(" 7: Display number of elements in the set B")
+		print("	8: Add an element taken from the user to the set A")
+		print("	9: Add multiple elements taken from the user to the set A")
+		print("	10: Remove an element taken from the user from set A")
+		print(" 11: Exit")
+
+		choice = int(input("Please enter your choice "))
+
+		if choice   ==1:
+			set_union(setA,setB) 
+		elif choice ==2:
+			set_intersection(setA,setB)
+		elif choice ==3:
+			set_minus(setA,setB)
+		elif choice ==4:
+			set_minus(setB,setA)
+		elif choice ==5:
+			is_member_of_set(setB) 
+		elif choice ==6:
+			set_display(setA)
+		elif choice ==7:
+			set_display(setB)
+		elif choice ==8:
+			set_add_element(setA)
+		elif choice ==9:
+			set_add_elements(setA)
+		elif choice ==10:
+			set_remove_element(setA)
+		elif choice ==11:
+			break
+		else:
+			print("Invalid Input , Please Try Again !!!!  ")  
+			
+my_set_store()			
