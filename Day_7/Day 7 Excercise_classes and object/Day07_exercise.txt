@@ -1,0 +1,45 @@
+-------------------------------------------
+Exercise 01 : Classes and objects -- try creating this in oops world
+-------------------------------------------
+Employee
+  # instance variables 
+   emp_id
+   emp_salary
+   mgr_id
+  # class variable 
+  department_name
+  
+  # instance methods
+  get_emp_salary()-> emp_salary
+  set_emp_salary(rcv_salary)-> emp_salary
+
+  # class method 
+  get_department_name() --> department_name
+  
+  # static method
+  field_expertise() --> just displays some expertise for all my employees
+  
+main:
+
+1) create an object employee(100,1000,1)  
+2) do the following for the created object
+// direct access using .notation
+empid
+emp_salary
+mgr_id
+3) print the department name 
+4) display the expertise for the employees 
+5) Deleting Attributes and Objects
+
+-------------------------------------------
+Exercise 02 : Classes and objects -- try creating this in oops world
+-------------------------------------------
+ 
+Create a class that captures airline tickets. 
+Each ticket lists the departure and arrival cities, a flight number, and a seat assignment. 
+A seat assignment has both a row and a letter for the seat within the row (such as 12F). 
+
+main method:
+Make two examples of tickets being sold to passengers.
+display tickets booked details 
+
