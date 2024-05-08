@@ -11,6 +11,10 @@
 # display tickets booked details 
 
 
+# for generating random seat and flight purpose only
+availableSeatsList={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+availableFlight={"A","B","C","D","E"}
+
 class Seat:
     def __init__(self, row, letter):
         self.row = row
@@ -30,14 +34,25 @@ class AirlineTicket:
         print(f"Flight Number: {self.flight_number}")
         print(f"Seat Assignment: {self.seat.row}{self.seat.letter}")
 
+def getTravelDetails():
+    startCity=input("Enter your city : ")
+    destination=input("Enter your Destination city : ")
+    
+  
+    return startCity,destination
 # main method
 def main():
-    seat1 = Seat(1214, "I")
-    ticket1 = AirlineTicket("Mumbai", "Pune", "12F", seat1)
+    
+    
+    
+    startCity,destination=getTravelDetails()
+    ticket1 = AirlineTicket(startCity, destination, "12F", Seat(availableSeatsList.pop(),availableFlight.pop()))
     ticket1.display_details()
 
-    seat2 = Seat(1445, "I")
-    ticket2 = AirlineTicket("Beed", "Pune", "15D", seat2)
+
+    print()
+    startCity,destination=getTravelDetails()
+    ticket2 = AirlineTicket(startCity, destination, "12F", Seat(availableSeatsList.pop(),availableFlight.pop()))
     ticket2.display_details()
     
 main()
