@@ -1,0 +1,19 @@
+1. Write an OpenMP program in c for calculating the sum of n natural
+numbers using OpenMP.
+Hint: #pragma omp barrier
+
+
+2. Write a C version of an OpenMP program that calculates the factorial
+of a given number.
+
+
+3. Write a program that calculates for each array element the square of
+their index and stores it as the element value. These calculations
+must be done in parallel using OpenMP for.
+Expected output:
+a[0] = 0
+a[1] = 1
+a[2] = 4
+a[3] = 9
+a[4] = 16
+a[5] = 25
