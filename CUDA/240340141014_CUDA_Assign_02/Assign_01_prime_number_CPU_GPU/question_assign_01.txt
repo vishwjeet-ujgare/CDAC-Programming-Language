@@ -1,0 +1,2 @@
+1. Find prime numbers between 1 and 100001 first using CPU. Then do the same using GPU. Time both
+operations. (21 May)
