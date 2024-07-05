@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+sub is_palindrome {
+    my $word = shift;
+    my @letters = split(//, $word);
+    my $length = scalar @letters;
+    my $is_palindrome = 1;
+
+    for my $i (0 .. $length / 2) {
+        if ($letters[$i] ne $letters[$length - $i - 1]) {
+            $is_palindrome = 0;
+            last;
+        }
+    }
+
+    return $is_palindrome;
+}
+
+print "Enter a word: ";
+my $word = <STDIN>;
+chomp $word;
+
+if (is_palindrome($word)) {
+    print "$word is a palindrome.\n";
+} else {
+    print "$word is not a palindrome.\n";
+}

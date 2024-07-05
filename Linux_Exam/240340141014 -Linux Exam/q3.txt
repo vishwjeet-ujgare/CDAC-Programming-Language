@@ -1,0 +1,46 @@
+write a PERL script to solve the below problme statemet , each solution must be developed using subroutiness
+
+1) write a script to check whether string is palindrom or not ?
+	sample input :	
+	level : it is a palindorme string 
+	label : it is not a palindorm string 
+
+
+2) ask the usr to enter the arrray of numbers for example 1,2,3,4,5,6,7,8 and print the second largest and second smallest number 
+
+sample input : 1,2,3,4,5,6,7,8,
+
+sample output 
+second larget numbver 20
+second smallest numbver 16
+
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+sub read_numbers {
+    print "Enter a list of numbers separated by spaces: ";
+    my @numbers = split(' ', <STDIN>);
+    return @numbers;
+}
+
+sub find_second_smallest {
+    my @numbers = @_;
+    my @sorted = sort { $a <=> $b } @numbers;
+    return $sorted[1];
+}
+
+sub find_second_largest {
+    my @numbers = @_;
+    my @sorted = sort { $b <=> $a } @numbers;
+    return $sorted[1];
+}
+
+my @numbers = read_numbers();
+my $second_smallest = find_second_smallest(@numbers);
+my $second_largest = find_second_largest(@numbers);
+
+print "The second smallest number is: $second_smallest\n";
+print "The second largest number is: $second_largest\n";
+

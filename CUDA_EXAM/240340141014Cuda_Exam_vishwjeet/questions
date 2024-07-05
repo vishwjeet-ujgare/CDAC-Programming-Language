@@ -1,0 +1,5 @@
+
+// Q2. Given an integer array of size 10 million containing all non negative elemtns ,write cuda and c that is sequential program to find maxumum and minimum element of the array . compare the performance of both versions with sequential implementaion and display the speedup of both 
+//
+
+//q3 consider two arrays A and B each of size 1 million elements .Initialize them with the calue of the iteraort . perform thier addition on the GPU using  cuda and c sequential . time the code for both c and cuda 
