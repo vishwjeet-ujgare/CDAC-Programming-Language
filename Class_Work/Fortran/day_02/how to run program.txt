@@ -1,0 +1,2 @@
+gfortran filename.f90
+./a.out
